@@ -1,1 +1,11 @@
+'''
+Create a program that prompts for the side lengths of a triangle and computes the area using Heron's formula.
+(https://en.wikipedia.org/wiki/Heron%27s_formula)
+'''
+
+import math
+a = int(input("Enter triangle's height: "))
+b = int(input("Enter triangle's length: "))
+area = 0.5 * a * b
+print(f"The area of the triangle is {area}.")
 
