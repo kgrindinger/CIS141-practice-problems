@@ -1,3 +1,6 @@
+# Create a list of strings. Write code that counts how many times the word "Olympic" appears 
+# in the list, and then print the count.
+
 words = ["Olympic", "College", "Rangers", "Bremerton, WA", "Olympic", "Peninsula", "Olympic", "Games", "Medals"]
 print (words)
 count = 0
