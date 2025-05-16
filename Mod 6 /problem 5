@@ -1,0 +1,10 @@
+# Create a list of integers. Use a loop to build a new list where each element is the square 
+# of the corresponding element in the original list. Print the new list.
+
+numbers = [22, 2, 3, 4, 6, 12, 15, 18, 17, 33, 5, 8, 20, 41, 23, 7, 29, 9, 11, 19]
+squares = []
+
+for num in numbers:
+    squares.append (num ** 2)
+print ("Original list:", numbers)
+print ("Squared list:", squares)
