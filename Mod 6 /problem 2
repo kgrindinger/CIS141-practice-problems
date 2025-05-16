@@ -1,0 +1,8 @@
+words = ["Olympic", "College", "Rangers", "Bremerton, WA", "Olympic", "Peninsula", "Olympic", "Games", "Medals"]
+print (words)
+count = 0
+for word in words:
+    if word == "Olympic" :
+        count += 1
+        
+print (f"The word Olympic appears {count} times in the list.")
