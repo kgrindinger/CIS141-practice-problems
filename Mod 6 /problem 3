@@ -1,3 +1,6 @@
+# Create a list of strings. Write code to create a new list that includes only the strings 
+# longer than three characters. Print the resulting filtered list.
+
 words = ["cab", "plane", "train", "moped", "car", "walk"]
 print (words)
 filtered_words = []
