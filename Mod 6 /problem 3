@@ -1,0 +1,7 @@
+words = ["cab", "plane", "train", "moped", "car", "walk"]
+print (words)
+filtered_words = []
+for word in words:
+    if len(word) == 3:
+        filtered_words.append(word)
+print("Filtered List:", filtered_words)
