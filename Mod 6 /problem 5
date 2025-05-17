@@ -6,5 +6,5 @@ squares = []
 
 for num in numbers:
     squares.append (num ** 2)
-print ("Original list:", numbers)
-print ("Squared list:", squares)
+print (numbers)
+print (squares)
