@@ -4,7 +4,7 @@
 #* 100-199 XP → Level 2
 #* 200+ XP → Level 3
 
-#OK, so I want to ask what the curent score or XP is and then tell them which level they are at. So, input first then function.
+#OK, so I want to ask what the curent score or XP is and then tell them which level they are at. 
 
 def level_up(experience):
     if experience < 100:
@@ -14,15 +14,12 @@ def level_up(experience):
     else:
         return 3
 
-def main():
-    score_input = input("What is your current XP? ")
+score_input = input("What is your current XP? ")
     
-    try:
-        experience = int(score_input)
-        level = level_up(experience)
-        print(f"You are now at Level {level}!")
-    except ValueError:
-        print("Please enter a valid number.")
-
-main()
+try:
+    experience = int(score_input)
+    level = level_up(experience)
+    print(f"You are now at Level {level}!")
+except ValueError:
+    print("Please enter a valid number.")
  
