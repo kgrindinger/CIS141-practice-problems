@@ -7,21 +7,42 @@
 #I just want to write code for the print statements, which is super helpful because I know nothing about Pokeman!
 
 def type_advantage(attacker, defender):
-    effectiveness = {
-        'fire': {'grass': 'Super Effective', 'water': 'Not Very Effective', 'fire': 'Not Very Effective'},
-        'water': {'fire': 'Super Effective', 'grass': 'Not Very Effective', 'water': 'Not Very Effective'},
-        'grass': {'water': 'Super Effective', 'fire': 'Not Very Effective', 'grass': 'Not Very Effective'},
-        'electric': {'water': 'Super Effective', 'grass': 'Not Very Effective', 'electric': 'Not Very Effective'},
-    }
-
     attacker = attacker.lower()
     defender = defender.lower()
 
-    if attacker in effectiveness:
-        return effectiveness[attacker].get(defender, 'Neutral')
+    if attacker == 'fire':
+        if defender == 'grass':
+            return 'Super Effective'
+        elif defender == 'water' or defender == 'fire':
+            return 'Not Very Effective'
+        else:
+            return 'Neutral'
+    elif attacker == 'water':
+        if defender == 'fire':
+            return 'Super Effective'
+        elif defender == 'grass' or defender == 'water':
+            return 'Not Very Effective'
+        else:
+            return 'Neutral'
+    elif attacker == 'grass':
+        if defender == 'water':
+            return 'Super Effective'
+        elif defender == 'fire' or defender == 'grass':
+            return 'Not Very Effective'
+        else:
+            return 'Neutral'
+    elif attacker == 'electric':
+        if defender == 'water':
+            return 'Super Effective'
+        elif defender == 'grass' or defender == 'electric':
+            return 'Not Very Effective'
+        else:
+            return 'Neutral'
     else:
         return 'Neutral'
-        
-print(type_advantage("Water", "Fire")) 
-print(type_advantage("Fire", "Water")) 
-print(type_advantage("Electric", "Grass")) 
+
+# Test cases
+print(type_advantage("Water", "Fire"))       # Super Effective
+print(type_advantage("Fire", "Water"))       # Not Very Effective
+print(type_advantage("Electric", "Grass"))   # Not Very Effective
+
