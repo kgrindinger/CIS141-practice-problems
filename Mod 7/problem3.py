@@ -41,7 +41,6 @@ def type_advantage(attacker, defender):
     else:
         return 'Neutral'
 
-# Test cases
 print(type_advantage("Water", "Fire"))       # Super Effective
 print(type_advantage("Fire", "Water"))       # Not Very Effective
 print(type_advantage("Electric", "Grass"))   # Not Very Effective
