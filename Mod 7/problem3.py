@@ -4,6 +4,8 @@
 #strings and returns "Super Effective", "Not Very Effective", or "Neutral" based on
 #simple type effectiveness rules. Your solution only needs to work for these three sets of input:
 
+#I just want to write code for the print statements, which is super helpful because I know nothing about Pokeman!
+
 def type_advantage(attacker, defender):
     effectiveness = {
         'fire': {'grass': 'Super Effective', 'water': 'Not Very Effective', 'fire': 'Not Very Effective'},
